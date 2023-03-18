@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <img id="pic99" width="150px" height="auto" src="brutal-bearded-man-portrait-in-backlight-vector-26979783.webp"
+        alt="">
+    <script>
+
+        document.getElementById('pic99').style.cssFloat = 'right';
+
+        const dog = 'snickers'; // global scope
+
+        function logDog() {
+            console.log('global dog: ' + dog);
+        }
+
+        function go() {
+            const dog = 'sunny'; // local scope, block scope
+            console.log('local dog: ' + dog)
+            logDog();
+        }
+        go();
+
+        console.log(dog)
+
+    </script>
+
+</body>
+
+</html>
