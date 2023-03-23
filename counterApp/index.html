@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter App</title>
+
+    <!-- Added new Google font 'Sofia' -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet">
+
+    <link type="text/css" rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        
+        <div class="overlay">
+            <h2>Characters and Words Counter App</h2>
+            <h3>Created by Mubashir - PIAIC-108478</h3>
+            
+            <div class="container">
+                
+                <div class="inputText">
+                    <input type="text" id="text" size="27px" placeholder="Enter your text here!">
+                </div>
+
+                <div class="displayCounter">
+                    <input type="text" id="displayInputChar" readonly>
+                    <input type="text" id="displayInputWord" readonly>
+                </div>
+
+                <div class="buttons">
+                    <div onclick="charTextFunc()">
+                        <button id="btnChar">Count Character</button>
+                    </div>
+
+                    <div onclick="wordTextFunc()">
+                        <button id="btnWord">Count Words</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <!-- Link the JavaScript Source file -->
+    <script src="app.js"></script>
+
+</body>
+</html>
